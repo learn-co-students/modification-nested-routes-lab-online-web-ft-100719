@@ -4,6 +4,9 @@
   <%= f.label :artist_name %>
   <%= f.text_field :artist_name %>
   <br />
+  <%= display_artist_if_present(@song, @path) %>
+  <%= artist_select(@song, @path) %><br><br>
+
 
   <%= f.submit %>
 <% end %>
